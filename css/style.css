@@ -1,53 +1,100 @@
-/* General Styles */
+:root {
+  --bg: #ffffff;
+  --text: #1a2233;
+  --card-bg: #eef3f8;
+  --accent: #0a7c8c;
+}
+
+body.dark {
+  --bg: #121826;
+  --text: #e8edf5;
+  --card-bg: #1f2937;
+  --accent: #4fd1c5;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    transition: 0.3s;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
-/* Navigation */
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 30px;
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
 }
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav h2 {
-    font-size: 24px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-/* Main Content */
-main {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
-    text-align: center;
-}
+
 h1 {
-    color: #007bff;
-    margin-bottom: 20px;
+  margin: 0 0 12px;
 }
-section {
-    background: white;
-    padding: 25px;
-    margin: 25px 0;
-    border-radius: 12px;
-    box-shadow: 0 4p
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--card-bg);
+  border-bottom: 3px solid var(--accent);
+}
+
+.bar-links {
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.photo {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  margin: 16px auto;
+  border-radius: 50%;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  flex: 1;
+  padding: 16px;
+  background: var(--card-bg);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  gap: 8px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  margin-top: 24px;
+  padding: 10px 18px;
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid var(--card-bg);
+}
