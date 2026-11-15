@@ -1,80 +1,56 @@
-<!-- Name: Reda Mohamed Ramadan -->
-<!-- ID: 225104701 -->
-
+<!-- Name: Mohab Khaled Abdelatif Abdelhamed Elshoky | Student ID: 225103916 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<header>
-    <nav>
-        <h2>Reda</h2>
-        <div>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </div>
+  <header>
+    <h1>Mohab Khaled Elshoky</h1>
+    <nav class="bar">
+      <span class="bar-name">Mohab Khaled Elshoky</span>
+      <div class="bar-links">
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
-</header>
+  </header>
 
-<main>
-    <h1>Reda Mohamed Ramadan</h1>
+  <main>
+    <img class="photo" src="images/me.jpg" alt="Portrait photo of me">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="images/me.jpg" alt="My personal photo" width="200">
-        <p>Hello! I am a Computer Science student.</p>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills & Hobbies</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Programming</h3>
-                <p>I enjoy coding.</p>
-            </div>
-
-            <div class="card">
-                <h3>Gaming</h3>
-                <p>I enjoy playing games.</p>
-            </div>
-
-            <div class="card">
-                <h3>Learning</h3>
-                <p>I love learning new things.</p>
-            </div>
-        </div>
+    <section id="skills" class="cards">
+      <div class="card">
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+      <div class="card">
+        <h2>Hobbies</h2>
+        <p>Reading, football, gaming</p>
+      </div>
+      <div class="card">
+        <h2>Goal</h2>
+        <p>Become a web developer</p>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
+      <h2>Leave your details</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
 
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-
-            <button type="submit">Submit</button>
-        </form>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </form>
     </section>
 
-    <button id="themeBtn">Change Theme</button>
-</main>
+    <button id="theme-btn" type="button">Dark / Light</button>
+  </main>
 
-<footer>
-    <p>Copyright &copy; 2026 Reda Mohamed Ramadan</p>
-</footer>
-
-<script src="js/script.js"></script>
-
-</body>
-</html>
+  <footer>
+    <p>&copy; 2026 Mohab Khaled Elshoky. All rights reserved.</p>
+  </footer>
